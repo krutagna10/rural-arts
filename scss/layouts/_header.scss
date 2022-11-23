@@ -1,0 +1,130 @@
+.header-section {
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+@media (min-width: 45em) {
+  .header-section {
+    padding: 2.5rem 0;
+    position: relative;
+  }
+}
+
+.header {
+  &__logo-wrapper {
+    max-width: 10rem;
+  }
+
+  &__nav {
+    background-color: var(--black);
+    position: absolute;;
+    height: 45vh;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+    z-index: 99;
+
+    opacity: 0;
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+
+  .navigation-open &__nav {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
+
+  }
+
+  &__nav-list {
+    list-style: none;
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: hsl(var(--raw-white), 0.75);
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+  }
+
+  &__nav-link:hover {
+    color: var(--white);
+  }
+
+  &__mobile-nav-toggle {
+    display: block;
+    border: none;
+    width: 2rem;
+    height: 1.5rem;
+    background: transparent url('/images/shared/mobile/icon-hamburger.svg') no-repeat center;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .navigation-open &__mobile-nav-toggle {
+    background-image: url('/images/shared/mobile/icon-close.svg');
+  }
+
+  @media (min-width: 45em) {
+    &__mobile-nav-toggle {
+      display: none;
+    }
+
+    &__logo-wrapper {
+      max-width: 12rem;
+    }
+
+    &__nav {
+      background-color: var(--white);
+      position: static;
+      height: 100%;
+      padding-left: 0;
+      display: flex;
+      align-items: center;
+
+      opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    &__nav-list {
+      gap: 2rem;
+      flex-direction: row;
+    }
+
+    &__nav-link {
+      color: hsl(var(--raw-black), 0.8);
+    }
+
+    &__nav-link:hover {
+      color: var(--black);
+      border-color: var(--black);
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  display: block;
+  inset: 0;
+  background-color: hsl(var(--raw-black), 0.4);
+  z-index: 2;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+
+
+
+
+
