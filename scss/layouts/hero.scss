@@ -1,0 +1,18 @@
+.hero {
+  gap: 4rem;
+  padding-top: 3.5rem;
+
+  &__content {
+    --flow-space: 2.25rem;
+  }
+
+  &__image {
+    max-width: 160% !important;
+  }
+
+  &__text {
+    line-height: 1.8;
+  }
+
+}
+

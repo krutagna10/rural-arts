@@ -424,6 +424,20 @@ body {
   display: none;
 }
 
+.hero {
+  gap: 4rem;
+  padding-top: 3.5rem;
+}
+.hero__content {
+  --flow-space: 2.25rem;
+}
+.hero__image {
+  max-width: 160% !important;
+}
+.hero__text {
+  line-height: 1.8;
+}
+
 .btn {
   display: block;
   border: none;
@@ -450,16 +464,6 @@ body {
 .btn--dark:hover {
   background-color: var(--light-peach);
   color: var(--white);
-}
-
-.btn {
-  display: block;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  transition: all 0.3s ease;
-  width: 100%;
 }
 
 .service {
@@ -585,6 +589,9 @@ body {
 .login__input:focus {
   outline: none;
   border: 1.75px solid black;
+}
+.login__btn {
+  width: 100%;
 }
 .login__forgot-password {
   display: block;
