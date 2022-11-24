@@ -5,6 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,14 +23,15 @@
 
         <nav class="header__nav">
             <ul id="header__nav-list" class="header__nav-list flex">
-                <li><a href="#" class="header__nav-link font-size-300 uppercase letter-spacing-1">Our
-                    Products</a></li>
-                <li><a href="#" class="header__nav-link font-size-300 uppercase letter-spacing-1">Contact</a>
-                </li>
-                <li><a href="pages/login.html" class="header__nav-link font-size-300 uppercase letter-spacing-1">Login</a>
-                </li>
+                <li><a href="#" class="header__nav-link font-size-300 uppercase letter-spacing-1">Arts</a></li>
+                <li><a href="#" class="header__nav-link font-size-300 uppercase letter-spacing-1">Crafts</a></li>
+                <li><a href="pages/login.html" class="header__nav-link font-size-300 uppercase letter-spacing-1">Pottery</a></li>
+                <li><button class="header__btn header__btn--account"><ion-icon name="cart-outline"></ion-icon></button></li>
+                <li><button class="header__btn header__btn--cart"><ion-icon name="person-outline"></ion-icon></button></li>
+                <li><button class="header__btn header__btn--search"><ion-icon name="search-outline"></ion-icon></button></li>
             </ul>
         </nav>
+
 
         <button class="header__mobile-nav-toggle"></button>
     </div>

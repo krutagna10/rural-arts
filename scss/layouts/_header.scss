@@ -12,7 +12,7 @@
 
 .header {
   &__logo-wrapper {
-    max-width: 10rem;
+    max-width: 8rem;
   }
 
   &__nav {
@@ -43,7 +43,7 @@
 
   &__nav-list {
     list-style: none;
-    gap: 1rem;
+    gap: 1.25rem;
     flex-direction: column;
   }
 
@@ -72,13 +72,20 @@
     background-image: url('/images/icon-close.svg');
   }
 
+  &__btn {
+    background: transparent;
+    border: none;
+    font-size: 1.35rem;
+    cursor: pointer;
+  }
+
   @media (min-width: 45em) {
     &__mobile-nav-toggle {
       display: none;
     }
 
     &__logo-wrapper {
-      max-width: 12rem;
+      max-width: 10rem;
     }
 
     &__nav {
@@ -96,7 +103,7 @@
     }
 
     &__nav-list {
-      gap: 2rem;
+      gap: 3.5rem;
       flex-direction: row;
     }
 
