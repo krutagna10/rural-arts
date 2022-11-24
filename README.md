@@ -1,5 +1,5 @@
 # Rural Art
-Rural Art is a website where we can buy rural arts and crafts for the best price.
+A website which brings rural arts to the world.
 
 ### Screenshot
 
