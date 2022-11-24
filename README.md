@@ -1,5 +1,5 @@
 # Rural Art
-A website which brings rural arts to the world.
+A website which brings rural arts to the world. Rural arts are like hidden gems, which world should recognise & appreciate with this website.
 
 ### Screenshot
 
