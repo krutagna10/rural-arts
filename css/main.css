@@ -19,6 +19,7 @@
   --very-light-peach: #FDF3F0;
   --dark-grey: hsl(264, 5%, 20%);
   --light-grey: hsl(210, 17%, 95%);
+  --grey: #888;
   /* Spacing */
   --gap: 1rem;
   --flow-space: 1.25rem;
@@ -60,7 +61,7 @@
   padding: 0;
 }
 
-img:not(.hero__image),
+img,
 picture {
   display: block;
   max-width: 100%;
@@ -236,12 +237,12 @@ body {
   color: var(--black);
 }
 
-.footer-text-color {
-  color: var(--footer-text-color);
+.text-color-grey {
+  color: var(--grey);
 }
 
 .container {
-  max-width: 85rem;
+  max-width: 80rem;
   padding-inline: 1rem;
   margin: 0 auto;
 }
@@ -569,25 +570,42 @@ body {
   min-width: 25rem;
 }
 .login__header {
-  padding: 1.5rem 1rem;
+  padding: 2.75rem 1rem;
 }
 .login__heading {
   font-size: 1.875rem;
 }
 .login__form {
-  padding-inline: 1.5rem;
+  padding: 1.5rem;
 }
 .login__input {
   width: 100% !important;
+  padding: 0.5rem;
 }
-
-.login__text {
-  color: #555;
+.login__input:focus {
+  outline: none;
+  border: 1.75px solid black;
 }
-
-.sign-up-wrapper {
+.login__forgot-password {
+  display: block;
+  text-decoration: none;
+  color: var(--peach);
+  text-align: right;
+}
+.login__sign-up {
   padding-top: 3rem;
   padding-bottom: 1.5rem;
+}
+.login__text {
+  font-size: 0.85rem;
+}
+.login__btn--sign-up {
+  background-color: transparent;
+  color: var(--peach);
+  font-weight: 600;
+}
+.login__btn--sign-up:hover {
+  color: var(--light-peach);
 }
 
 /*# sourceMappingURL=main.css.map */

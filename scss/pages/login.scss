@@ -5,7 +5,7 @@
   min-width: 25rem;
 
   &__header{
-    padding: 1.5rem 1rem;
+    padding: 2.75rem 1rem;
   }
 
   &__heading {
@@ -13,21 +13,43 @@
   }
 
   &__form {
-    padding-inline: 1.5rem;
+    padding: 1.5rem;
   }
 
   &__input {
     width: 100% !important;
+    padding: 0.5rem;
   }
-}
 
+  &__input:focus {
+    outline: none;
+    border: 1.75px solid black;
+  }
 
+  &__forgot-password {
+    display: block;
+    text-decoration: none;
+    color: var(--peach);
+    text-align: right;
+  }
 
-.login__text {
-  color: #555;
-}
+  &__sign-up {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+  }
 
-.sign-up-wrapper {
-  padding-top: 3rem;
-  padding-bottom: 1.5rem;
+  &__text {
+    font-size: 0.85rem;
+  }
+
+  &__btn--sign-up, {
+    background-color: transparent;
+    color: var(--peach);
+    font-weight: 600;
+  }
+
+  &__btn--sign-up:hover {
+     color: var(--light-peach);
+  }
+
 }
