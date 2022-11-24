@@ -14,32 +14,31 @@
     <link rel="stylesheet" href="../css/main.css">
     <title>Rural Arts | Login Page</title>
 </head>
-<body class="form-body">
+<body class="grid grid--content-center">
 <section class="form-section">
     <div class="login text-align-center flow">
-        <header class="login__header">
-            <h1 class="login__heading">Sign in</h1>
+        <header class="login__header background-peach">
+            <h1 class="login__heading text-color-white">Sign in</h1>
         </header>
 
         <form class="login__form flow">
             <div class="login__input-wrapper">
                 <label for="login__mail"></label>
-                <input class="login_input" type="email" name="login_mail" id="login__mail" placeholder="Username">
+                <input class="login__input" type="email" name="login_mail" id="login__mail" placeholder="Username">
             </div>
             <div class="login__input-wrapper">
                 <label for="login__password"></label>
-                <input class="login_input" type="password" name="login_password" id="login_password"
-                       placeholder="Password">
+                <input class="login__input" type="password" name="login__password" id="login__password" placeholder="Password">
             </div>
             <a href="#" class="login__forgot-password">
                 Forgot your password?
             </a>
-            <button class="btn btn--login uppercase">Sign In</button>
+            <button class="login__btn btn btn--dark uppercase">Sign In</button>
         </form>
 
         <div class="sign-up-wrapper">
             <p class="login__text font-size-100">Don't have an account?</p>
-            <button class="btn btn--register uppercase">Sign up now</button>
+            <button class="login__btn login__btn--register font-size-100 btn uppercase">Sign up now</button>
         </div>
     </div>
 </section>

@@ -1,89 +1,27 @@
-.btn {
-  display: block;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  transition: all 0.3s ease;
-  width: 100%;
-}
-
-.btn--login {
-  background-color: var(--light-green);
-  color: var(--white);
-  border: 1px solid transparent;
-}
-
-.btn--login:hover {
-  background-color: var(--dark-green);
-}
-
-.btn--register {
-  background-color: var(--white);
-  color: var(--light-green);
-}
-
-.btn--register:hover {
-  color: var(--dark-green);
-}
-
-/* Login Page */
-.form-body {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(233, 240, 242);
-}
-
-.form-container {
-  text-align: center;
-}
-
 .login {
-  background-color: white;
   box-shadow: 3px 5px 13px rgba(0, 0, 0, 0.5);
   border-radius: 0.75rem;
   overflow: hidden;
   min-width: 25rem;
+
+  &__header{
+    padding: 1.5rem 1rem;
+  }
+
+  &__heading {
+    font-size: 1.875rem;
+  }
+
+  &__form {
+    padding-inline: 1.5rem;
+  }
+
+  &__input {
+    width: 100% !important;
+  }
 }
 
-.login__header {
-  background-color: #57b846;
-  color: var(--white);
-  padding: 1.5rem 1rem;
-}
 
-.login__heading {
-  font-weight: 600;
-  font-size: 1.875rem;
-}
-
-.login__form {
-  padding-inline: 1.5rem;
-}
-
-.input_wrapper {
-  background-color: #ebebeb;
-  padding: 0.5rem;
-}
-
-.login__input {
-  width: 100%;
-}
-
-.login__forgot-password {
-  text-align: right !important;
-  display: block;
-  margin-top: 0.5rem;
-  color: #57b846;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.login__forgot-password:hover {
-  color: var(--dark-green);
-}
 
 .login__text {
   color: #555;
