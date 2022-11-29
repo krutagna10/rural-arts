@@ -1,5 +1,5 @@
 # Rural Art
-A website which brings rural arts to the world as they are like hidden gems, which world should recognise & appreciate.
+Rural arts are like hidden gems, which world should recognise & appreciate with this website. We bring the crafts whose worth is huge and also giving hand crafts the recognition that it needs .
 
 ### Screenshot
 
